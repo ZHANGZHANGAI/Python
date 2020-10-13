@@ -42,7 +42,7 @@ def compare():
         if use > nminn:
             nmaxn = use  # 修改提示范围的最大值
             tk.messagebox.showinfo('不正确', "大了，大了！请输入" + str(nminn) + "到" + str(nmaxn) + "之间任意整数：")
-        elif use < 0:event
+        elif use < 0:
             tk.messagebox.showerror('警告', '输入不正确！！！')
 
     elif use > number:
