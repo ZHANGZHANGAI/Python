@@ -17,7 +17,7 @@ def lottery_roll(var1):
     show_member = random.choice(data)  # 随机选取姓名
     var1.set(show_member)  # var1 显示抽取出来的姓名
     if going:  # going=True
-        window.after(50, lottery_roll, var1)  # 每50毫秒循环一次
+        window.after(50, lottery_roll, var1)  # 每50毫秒循环一次 after方法接受三个参数，时间（刷新主窗口的频率）+ 函数（tell主程序要做的动作）+ 更新的变量
     else:  # going=False
         result = tkinter.messagebox.showinfo(title='信息提示！', message='恭喜 {} ！！！'.format(show_member))  # 弹窗显示恭喜+抽取出来的姓名
         going = True
